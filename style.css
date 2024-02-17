@@ -1,3 +1,27 @@
+@import url("https://unpkg.com/@catppuccin/palette@1.1.0/css/catppuccin.css");
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body {
+    color: var(--ctp-macchiato-text);
+    background-color: var(--ctp-macchiato-mantle);
+    font-family: 'JetBrains Mono';
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--ctp-macchiato-sky);
+}
+
+.sidenav-logo {
+    margin-left: auto;
+    margin-right: auto;
+
+    display: block;
+
+    border-radius: 10px;
+}
+
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -6,7 +30,7 @@
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #111; /* Black*/
+    background-color: var(--ctp-macchiato-crust); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -17,14 +41,15 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
     display: block;
     transition: 0.3s;
 }
-  
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    color: #f1f1f1;
+
+hr {
+    color: var(--ctp-macchiato-yellow);
+    margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
   
 /* Position and style the close button (top right corner) */
@@ -39,11 +64,37 @@
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
     transition: margin-left .5s;
-    padding: 20px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+    margin: 0px;
 }
+
   
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 } 
+
+.header {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	flex-wrap: wrap;
+    background-color: var(--ctp-macchiato-crust);
+    max-width: 100%;
+    width: 100%;
+
+    height: 80px;
+
+	/* Don't layer alpha values */
+}
+
+.header a {
+	display: flex;
+	padding: 10px;
+
+    margin-right: auto;
+}
