@@ -2,15 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 body {
-    color: var(--ctp-macchiato-text);
-    background-color: var(--ctp-macchiato-mantle);
+    color: var(--ctp-mocha-text);
+    background-color: var(--ctp-mocha-mantle);
     font-family: 'JetBrains Mono';
     margin: 0;
 }
 
 a {
     text-decoration: none;
-    color: var(--ctp-macchiato-sky);
+    color: var(--ctp-mocha-sky);
 }
 
 .sidenav-logo {
@@ -19,7 +19,7 @@ a {
 
     display: block;
 
-    border-radius: 10px;
+    border-radius: 40px;
 }
 
 /* The side navigation menu */
@@ -30,7 +30,7 @@ a {
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: var(--ctp-macchiato-crust); /* Black*/
+    background-color: var(--ctp-mocha-crust); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -46,7 +46,7 @@ a {
 }
 
 hr {
-    color: var(--ctp-macchiato-yellow);
+    color: var(--ctp-mocha-yellow);
     margin: 15px;
     margin-left: auto;
     margin-right: auto;
@@ -90,7 +90,7 @@ hr {
 
     height: 700px;
 
-    background-image: url("./materialcongregation.png");
+    background-image: url("./banner.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -107,12 +107,12 @@ hr {
 
 .header-overlay {
     z-index: 10000;
-    width:100%;
+    width: 100%;
     margin-bottom: auto;
     
-    display:flex;
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    align-items: left;
+    justify-content: left;
     
-    color: var(-ctp-latte-overlay2);
+    color: var(--ctp-mocha-lavender);
 }
