@@ -88,7 +88,12 @@ hr {
     max-height: 100%;
     width: 100%;
 
-    height: 650px;
+    height: 700px;
+
+    background-image: url("./materialcongregation.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
 	/* Don't layer alpha values */
 }
@@ -98,4 +103,16 @@ hr {
     padding: 20px;
 
     margin-right: auto;
+}
+
+.header-overlay {
+    z-index: 10000;
+    width:100%;
+    margin-bottom: auto;
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: var(-ctp-latte-overlay2);
 }
